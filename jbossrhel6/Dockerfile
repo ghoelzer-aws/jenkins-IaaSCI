@@ -17,7 +17,7 @@ RUN yum install -y apache-maven
 RUN mvn --version
 
 # Install packages necessary to run EAP
-RUN yum -y install saxon unzip && yum clean all
+RUN yum -y install git saxon unzip && yum clean all
 
 # Create a user and group used to launch processes
 # The user ID 1000 is the default for the first "regular" user on Fedora/RHEL,
