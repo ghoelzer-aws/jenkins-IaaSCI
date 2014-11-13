@@ -10,7 +10,7 @@ RUN subscription-manager repos --enable rhel-6-server-rpms
 RUN yum -y update && yum clean all
 
 # Install packages necessary to run EAP
-RUN yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all
+RUN yum -y install xmlstarlet saxon augeas bsdtar unzip apache-maven && yum clean all
 
 # Create a user and group used to launch processes
 # The user ID 1000 is the default for the first "regular" user on Fedora/RHEL,
