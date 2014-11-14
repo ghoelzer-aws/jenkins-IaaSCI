@@ -2,6 +2,7 @@
 FROM jbosseap611/6
 
 # Clone Project Repo into /opt/jboss
+# Updated App to version 1.00
 RUN git clone https://github.com/ghoelzer-rht/eaphelloworld-xpaas.git
 
 # Run Maven Build/Test
