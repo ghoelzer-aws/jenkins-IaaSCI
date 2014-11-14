@@ -7,6 +7,7 @@ FROM jbosseap611/6
 ADD eaphelloworld-xpaas /opt/jboss/eaphelloworld-xpaas
 
 # Run Maven Build/Test
+USER root
 RUN cd /opt/jboss/eaphelloworld-xpaas && pwd && ls -la && mvn package
 
 # Copy WAR file to EAP Deployment Directory
