@@ -5,7 +5,7 @@ FROM jbosseap611/6
 # Updated App to version 1.00
 #RUN git clone https://github.com/ghoelzer-rht/eaphelloworld-xpaas.git
 
-ADD eaphelloworld-xpaas /opt/jboss/
+ADD eaphelloworld-xpaas /opt/jboss/eaphelloworld-xpaas
 
 # Run Maven Build/Test
 RUN cd /opt/jboss/eaphelloworld-xpaas && pwd && ls -la && mvn package
