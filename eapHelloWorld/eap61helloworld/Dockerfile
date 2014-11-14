@@ -2,7 +2,7 @@
 FROM jbosseap611/6
 
 # Add Project Repo into /opt/jboss
-# Updated App to version 1.01
+# Updated App to version 1.02
 
 USER root
 
@@ -13,5 +13,5 @@ RUN cd /opt/jboss/eaphelloworld-xpaas && pwd && ls -la && mvn package
 
 # Copy WAR file to EAP Deployment Directory
 USER jboss
-RUN cp /opt/jboss/eaphelloworld-xpaas/target/eaphelloworldv100-1.01.war /opt/jboss/eap-6.1/standalone/deployments/
+RUN cp /opt/jboss/eaphelloworld-xpaas/target/eaphelloworldv100-1.02.war /opt/jboss/eap-6.1/standalone/deployments/
 
