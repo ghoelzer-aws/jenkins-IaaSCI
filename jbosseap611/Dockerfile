@@ -1,5 +1,5 @@
-# Use latest jbossrhek6 image as the base
-FROM jbossrhel6:latest
+# Use latest jbossrhel7 image as the base
+FROM jbossrhel7:latest
 
 # Add the EAP distribution to /opt/jboss
 # Make sure the distribution is copied to directory where Dockerfile is located

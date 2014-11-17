@@ -1,5 +1,5 @@
-# Use EAP 6.1.1/RHE6 Base Image for Hello World Build/Test/Delployment
-FROM jbosseap611/6
+# Use EAP 6.1.1/RHEL7 Base Image for Hello World Build/Test/Delployment
+FROM jbosseap611/7
 
 # Add Project Repo into /opt/jboss
 # Updated App to version 1.02
