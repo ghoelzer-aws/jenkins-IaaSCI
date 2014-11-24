@@ -2,4 +2,4 @@
 # Redirect SSH Port to 3322
 # Default Password
 #
-sudo docker run -d -p 0.0.0.0:3322:22 -e ROOT_PASS="mypass" jbossrhel7bld
+sudo docker run -d -p 0.0.0.0:3322:22 -e ROOT_PASS="mypass" --name jbossrhel7bld-slave1 jbossrhel7bld
