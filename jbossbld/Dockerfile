@@ -1,4 +1,4 @@
-FROM jbossrhel7
+FROM jbossrhel6
 MAINTAINER Greg Hoelzer ghoelzer@redhat.com
 
 USER root
