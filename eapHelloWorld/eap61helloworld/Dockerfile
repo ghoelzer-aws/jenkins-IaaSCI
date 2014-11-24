@@ -4,7 +4,7 @@ FROM jbosseap611/6
 USER root
 
 # Copy WAR file to EAP Deployment Directory
-ADD ./target/*.war /opt/jboss/eap-6.1/standalone/deployments/
+ADD eaphelloworldv100-1.02.war /opt/jboss/eap-6.1/standalone/deployments/
 
 USER jboss
 
