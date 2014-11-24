@@ -1,12 +1,10 @@
 # Use EAP 6.1.1/RHE6 Base Image for Hello World Build/Test/Delployment
 FROM jbosseap611/6
 
-# Updated App to version 1.02
-
 USER root
 
 # Copy WAR file to EAP Deployment Directory
-ADD eaphelloworldv100-1.02.war /opt/jboss/eap-6.1/standalone/deployments/
+ADD target/*.war /opt/jboss/eap-6.1/standalone/deployments/
 
 USER jboss
 
