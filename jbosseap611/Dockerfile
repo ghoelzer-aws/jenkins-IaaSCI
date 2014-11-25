@@ -10,7 +10,7 @@ RUN yum install -y apache-maven
 RUN mvn --version
 
 # Set JAVA_HOME environment variable to JDK 1.6 Install
-RUN echo "JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.33.x86_64” >> /etc/profile
+RUN echo 'JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.33.x86_64' >> /etc/profile
 
 USER jboss
 # Add the EAP distribution to /opt/jboss
