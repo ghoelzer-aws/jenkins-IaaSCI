@@ -21,6 +21,9 @@ RUN sed -i "s/#UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/ss
 # Add scripts
 ADD set_root_pw.sh /set_root_pw.sh
 ADD run.sh /run.sh
+ADD ssh_host_rsa_key /etc/ssh/ssh_host_rsa_key
+ADD ssh_host_dsa_key /etc/ssh/ssh_host_dsa_key
+
 RUN chmod +x /*.sh
 
 EXPOSE 22
