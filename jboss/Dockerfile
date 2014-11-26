@@ -1,10 +1,6 @@
 FROM rhel6-base
 MAINTAINER Greg Hoelzer ghoelzer@redhat.com
 
-# Update the image  
-RUN subscription-manager repos --disable=*  
-RUN subscription-manager repos --enable rhel-6-server-rpms  
-
 # Execute system update
 RUN yum -y update && yum clean all
 
