@@ -22,7 +22,7 @@ RUN sed -i "s/#UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/ss
 ADD set_root_pw.sh /set_root_pw.sh
 ADD run.sh /run.sh
 COPY ssh_host_rsa_key /etc/ssh/ssh_host_rsa_key
-RUN chmod 0640 /etc/ssh/ssh_host_rsa_key
+RUN chmod 0400 /etc/ssh/ssh_host_rsa_key
 RUN chmod +x /*.sh
 
 EXPOSE 22
