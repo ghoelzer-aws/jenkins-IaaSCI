@@ -7,10 +7,12 @@ RUN yum -y install wget
 RUN wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
 RUN sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
 RUN yum install -y apache-maven
-RUN mvn --version
 
 # Set JAVA_HOME environment variable to JDK 1.6 Install
 ENV JAVA_HOME /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.33.x86_64/jre
+
+# Verify Maven Install
+RUN mvn --version
 
 USER jboss
 # Add the EAP distribution to /opt/jboss
