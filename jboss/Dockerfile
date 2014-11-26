@@ -1,8 +1,7 @@
 FROM rhel6-base
 MAINTAINER Greg Hoelzer ghoelzer@redhat.com
 
-# Update the image (using an employee subscription)  
-RUN subscription-manager register --username=<account>  --password='<password>' --auto-attach  
+# Update the image  
 RUN subscription-manager repos --disable=*  
 RUN subscription-manager repos --enable rhel-6-server-rpms  
 
