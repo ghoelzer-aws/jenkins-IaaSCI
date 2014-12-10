@@ -1,18 +1,17 @@
-FROM jbossrhel6
+FROM jbossrhel6:latest
 MAINTAINER Greg Hoelzer ghoelzer@redhat.com
 
 USER root
 
 # Install Apache Maven
-RUN yum -y install wget openssh-server
-RUN wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
-RUN sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+RUN yum -y install openssh-server
+ADD http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo /etc/yum.repos.d/epel-apache-maven.repo
 RUN yum install -y apache-maven
 
-# Set JAVA_HOME environment variable to JDK 1.6 Install
-ENV JAVA_HOME /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.33.x86_64/jre
+# Set JAVA_HOME
+ENV JAVA_HOME /usr/lib/jvm/jre-1.7.0
 
-# Echo Maven Version Installed
+# Verify Maven Install
 RUN mvn --version
 
 # Set up sshd
