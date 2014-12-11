@@ -2,7 +2,7 @@
 FROM jbossrhel6:latest
 
 # Set JAVA_HOME
-ENV JAVA_HOME /usr/lib/jvm/jre-1.7.0
+ENV JAVA_HOME /usr/lib/jvm/jre-1.6.0
 
 USER jboss
 
