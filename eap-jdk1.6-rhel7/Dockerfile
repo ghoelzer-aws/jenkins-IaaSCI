@@ -1,8 +1,5 @@
 # Use latest jbossrhel7 image as the base
-FROM jbossrhel7:latest
-
-# Set JAVA_HOME
-ENV JAVA_HOME /usr/lib/jvm/jre-1.7.0
+FROM jdk1.6-rhel7
 
 USER jboss
 
