@@ -1,4 +1,4 @@
-FROM jbossrhel6:latest
+FROM jdk1.6rhel6
 MAINTAINER Greg Hoelzer ghoelzer@redhat.com
 
 USER root
@@ -9,7 +9,7 @@ ADD http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.rep
 RUN yum install -y apache-maven
 
 # Set JAVA_HOME
-ENV JAVA_HOME /usr/lib/jvm/jre-1.6.0
+#ENV JAVA_HOME /usr/lib/jvm/jre-1.6.0
 
 # Verify Maven Install
 RUN mvn --version
