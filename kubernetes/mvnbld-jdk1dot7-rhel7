@@ -1,0 +1,11 @@
+{
+  "id": "mvnbld-jdk1dot7-rhel7",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "selector": {
+    "name": "mvnbld-jdk1dot7-rhel7"
+  },
+  "containerPort": 22,
+  "protocol": "TCP",
+  "port": 22
+}
