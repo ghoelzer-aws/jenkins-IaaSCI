@@ -1,0 +1,23 @@
+kind: Pod
+id: registry
+apiVersion: v1beta1
+namespace: default
+labels:
+  name: registry
+desiredState:
+  manifest:
+    version: v1beta1
+    id: registry
+    volumes: []
+    containers:
+    - name: master
+      image: registry:latest
+      ports:
+        - containerPort: 5000
+          hostPort: 5000
+          protocol: TCP
+      env:
+        - name: STORAGE
+          value: local
+        - name: STORAGE_PATH
+          value: /tmp

@@ -1,0 +1,13 @@
+{
+  "id": "privateregistry",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "selector": {
+    "name": "registry"
+  },
+  "containerPort": 5000,
+  "protocol": "TCP",
+  "port": 5000,
+  "publicIP": 192.168.38.15,
+  "publicIP": 192.168.38.16
+}
