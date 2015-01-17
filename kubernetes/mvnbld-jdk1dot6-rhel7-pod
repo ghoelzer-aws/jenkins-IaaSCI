@@ -16,5 +16,5 @@ desiredState:
         value: example
       ports:
         - containerPort: 22
-          hostPort: 2222
+          hostPort: 5522
           protocol: TCP

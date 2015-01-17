@@ -1,20 +1,20 @@
 kind: Pod
-id: mvnbld-jdk1dot6-rhel7
+id: mvnbld-jdk1dot7-rhel7
 apiVersion: v1beta1
 namespace: default
 labels:
-  name: mvnbld-jdk1dot6-rhel7
+  name: mvnbld-jdk1dot7-rhel7
 desiredState:
   manifest:
     version: v1beta1
-    id: mvnbld-jdk1dot6-rhel7
+    id: mvnbld-jdk1dot7-rhel7
     containers:
-    - name: mvnbld-jdk1dot6-rhel7
-      image: 10.254.0.2:5000/mvnbld-jdk1.6-rhel7
+    - name: mvnbld-jdk1dot7-rhel7
+      image: 10.254.0.2:5000/mvnbld-jdk1.7-rhel7
       env:
       - name: ROOT_PASS
         value: example
       ports:
         - containerPort: 22
-          hostPort: 2222
+          hostPort: 3322
           protocol: TCP
