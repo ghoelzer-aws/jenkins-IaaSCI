@@ -1,0 +1,13 @@
+{
+  "id": "helloworld",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "selector": {
+    "name": "helloworld"
+  },
+  "containerPort": 8080,
+  "protocol": "TCP",
+  "port": 18080,
+  "publicIP": 192.168.38.15,
+  "publicIP": 192.168.38.16
+}

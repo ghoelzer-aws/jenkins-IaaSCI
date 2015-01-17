@@ -1,0 +1,18 @@
+kind: Pod
+id: helloworld
+apiVersion: v1beta1
+namespace: default
+labels:
+  name: helloworld
+desiredState:
+  manifest:
+    version: v1beta1
+    id: helloworld
+    volumes: []
+    containers:
+    - name: helloworld
+      image: 10.254.0.2:5000/helloworld
+      ports:
+        - containerPort: 8080
+          hostPort: 18080
+          protocol: TCP
