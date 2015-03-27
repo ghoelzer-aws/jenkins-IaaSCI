@@ -29,3 +29,7 @@ Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 Jenkins Slave stack fr
 
 Assuming you're using **RHEL7** as your Docker host OS, your Docker Images created will pickup the host's subscribed entitlements, enabling you to seamlessly use **yum** as part of your image builds like in our examples. Many may already be aware of this, but you can run a Docker Container using a any RHEL base OS (eg. 5,.X 6.X, 7.X) on any RHEL Host OS that supports Docker, which provides a great method for testing out OS, System Utility, Platform, and Application changes.
 
+We have orchestrated the Docker Images Builds and Container execution via Jenkins, and a complete RHEL 6 Infrastructure Build Pipleline example is below:
+
+![Jenkins list](https://raw.githubusercontent.com/ghoelzer-rht/jenkins-IaaSCI/master/doc/pics/01-jenkins-rhel6-pipeline.png?raw=true)
+
