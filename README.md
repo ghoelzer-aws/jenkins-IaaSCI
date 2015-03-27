@@ -1,5 +1,5 @@
 # jenkins-IaaSCI
-Experimenting with Jenkins and Continuous Integration for Infrastructure (readme updates in progress)
+**Experimenting with Jenkins and Continuous Integration for Infrastructure**
 
 The example Docker Files are used as part of two Jenkins Build Pipleines, based on RHEL6 and RHEL7 core OS/Infrastructure.  We have grouped the supporting Docker files in the **rhel6** and **rhel7 branches**.  In our example, our use case is a complete OS/Platform/Application stack.  We have created the supporting Docker file/image geneology such that we can automate the testing of any change at any point in the stack via Jenkins, Docker File/Images Builds, and Linux containers for multiple versions of the stack.  The logical geneology of the Docker Images and Build pipeline are as follows:
 
@@ -27,5 +27,5 @@ Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 Jenkins Slave stack fr
 
 **----\>mvnbld-jdk1.6-rhel6** - Installs Maven and some supporting utilities with yum
 
-Assuming you're using **RHEL7** as your Docker host OS, your Docker Images created will pickup the host's subscribed entitlements, enabling you to seamlessly use yum as part of your image builds like in our examples. Many may already be aware of this, but you can run a Docker Container using a any RHEL base OS (eg. 5,.X 6.X, 7.X) on any RHEL Host OS that supports Docker, which provides a great method for testing out OS, System Utility, Platform, and Application changes.
+Assuming you're using **RHEL7** as your Docker host OS, your Docker Images created will pickup the host's subscribed entitlements, enabling you to seamlessly use **yum** as part of your image builds like in our examples. Many may already be aware of this, but you can run a Docker Container using a any RHEL base OS (eg. 5,.X 6.X, 7.X) on any RHEL Host OS that supports Docker, which provides a great method for testing out OS, System Utility, Platform, and Application changes.
 
