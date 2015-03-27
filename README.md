@@ -13,7 +13,7 @@ Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 application stack from
 
 **[rhel6-latest](https://github.com/ghoelzer-rht/jenkins-IaaSCI/blob/rhel6/rhel6-latest/Dockerfile)** - Base Red Hat RHEL6 OS, with yum update
 
-**--\>[jdk1.6-rhel6](https://github.com/ghoelzer-rht/jenkins-IaaSCI/blob/rhel6jdk1.6-rhel6/Dockerfile)** - Installs jdk1.6 and some supporting utilities with yum
+**--\>[jdk1.6-rhel6](https://github.com/ghoelzer-rht/jenkins-IaaSCI/blob/rhel6/jdk1.6-rhel6/Dockerfile)** - Installs jdk1.6 and some supporting utilities with yum
 
 **----\>eap-jdk1.6-rhel6** - Installs JBoss EAP onto image from a .zip deployment
 
