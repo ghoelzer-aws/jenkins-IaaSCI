@@ -7,25 +7,25 @@ The example Docker Files are used as part of two Jenkins Build Pipleines, based 
 
 Additionally, we have created a similar logical geneology for Docker Images/Containers that can be used as Jenkins Build Slaves:
 
-RHEL Base -\> Java JDK -\> Maven + Utilities -\> Final Docker Image/Container for Jenkins Build Slave
+**RHEL Base -\> Java JDK -\> Maven + Utilities -\> Final Docker Image/Container for Jenkins Build Slave**
 
 Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 application stack from the rhel6 branch:
 
-rhel6-latest - Base Red Hat RHEL6 OS, with yum update
+**rhel6-latest** - Base Red Hat RHEL6 OS, with yum update
 
---\>jdk1.6-rhel6 - Installs jdk1.6 and some supporting utilities with yum
+**--\>jdk1.6-rhel6** - Installs jdk1.6 and some supporting utilities with yum
 
-----\>eap-jdk1.6-rhel6 - Installs EAP onto image from a .zip deployment
+**----\>eap-jdk1.6-rhel6** - Installs EAP onto image from a .zip deployment
 
-------\>helloworld-eap-jdk1.6-rhel6 - Adds a "hello world" app to the EAP deployment directory
+**------\>helloworld-eap-jdk1.6-rhel6** - Adds a "hello world" app to the EAP deployment directory
 
 Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 Jenkins Slave stack from the rhel6 branch:
 
-rhel6-latest - Base Red Hat RHEL6 OS, with yum update
+**rhel6-latest** - Base Red Hat RHEL6 OS, with yum update
 
---\>jdk1.6-rhel6 - Installs jdk1.6 and some supporting utilities with yum
+**--\>jdk1.6-rhel6** - Installs jdk1.6 and some supporting utilities with yum
 
-----\>mvnbld-jdk1.6-rhel6 - Installs Maven and some supporting utilities with yum
+**----\>mvnbld-jdk1.6-rhel6** - Installs Maven and some supporting utilities with yum
 
-Assuming you're using RHEL7 as your Docker host, your Docker Images created will pickup the host's subscribed entitlements, enabling you to seamlessly use yum as part of your image builds like in our examples. Many may already be aware of this, but you can run a Docker Container using a any RHEL base OS (eg. 5,.X 6.X, 7.X) on any RHEL Host OS that supports Docker, which provides a great method for testing out OS, System Utility, Platform, and Application changes.
+Assuming you're using **RHEL7** as your Docker host OS, your Docker Images created will pickup the host's subscribed entitlements, enabling you to seamlessly use yum as part of your image builds like in our examples. Many may already be aware of this, but you can run a Docker Container using a any RHEL base OS (eg. 5,.X 6.X, 7.X) on any RHEL Host OS that supports Docker, which provides a great method for testing out OS, System Utility, Platform, and Application changes.
 
