@@ -11,7 +11,7 @@ Additionally, we have created a similar logical geneology for Docker Images/Cont
 
 Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 application stack from the rhel6 branch:
 
-**rhel6-latest** - Base Red Hat RHEL6 OS, with yum update
+**[rhel6-latest](https://github.com/ghoelzer-rht/jenkins-IaaSCI/blob/rhel6/rhel6-latest/Dockerfile)** - Base Red Hat RHEL6 OS, with yum update
 
 **--\>jdk1.6-rhel6** - Installs jdk1.6 and some supporting utilities with yum
 
