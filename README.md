@@ -31,5 +31,5 @@ Assuming you're using **RHEL7** as your Docker host OS, your Docker Images creat
 
 We have orchestrated the Docker Images Builds and Container execution via Jenkins, and a complete RHEL 6 Infrastructure Build Pipleline example is below:
 
-![Jenkins list](https://raw.githubusercontent.com/ghoelzer-rht/jenkins-IaaSCI/master/doc/pics/01-jenkins-rhel6-pipeline.png?raw=true)
+![Jenkins list](https://raw.githubusercontent.com/ghoelzer-rht/jenkins-IaaSCI/master/pics/01-jenkins-rhel6-pipeline.png?raw=true)
 
