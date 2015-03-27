@@ -15,7 +15,7 @@ Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 application stack from
 
 **--\>jdk1.6-rhel6** - Installs jdk1.6 and some supporting utilities with yum
 
-**----\>eap-jdk1.6-rhel6** - Installs EAP onto image from a .zip deployment
+**----\>eap-jdk1.6-rhel6** - Installs JBoss EAP onto image from a .zip deployment
 
 **------\>helloworld-eap-jdk1.6-rhel6** - Adds a "hello world" app to the EAP deployment directory
 
