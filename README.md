@@ -1,4 +1,3 @@
-# jenkins-IaaSCI
 ##Experimenting with Jenkins and Continuous Integration for Infrastructure##
 
 The example Docker Files are used as part of two Jenkins Build Pipleines, based on RHEL6 and RHEL7 core OS/Infrastructure.  We have grouped the supporting Docker files in the **rhel6** and **rhel7 branches**.  In our example, our use case is a complete OS/Platform/Application stack.  We have created the supporting Docker file/image geneology such that we can automate the testing of any change at any point in the stack via Jenkins, Docker File/Images Builds, and Linux containers for multiple versions of the stack.  The logical geneology of the Docker Images and Build pipeline are as follows:
