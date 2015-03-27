@@ -21,11 +21,11 @@ Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 application stack from
 
 Here's the Docker File/Image Geneology for a RHEL6/JDK1.6 Jenkins Slave stack from the rhel6 branch:
 
-**rhel6-latest** - Base Red Hat RHEL6 OS, with yum update
+**[rhel6-latest](https://github.com/ghoelzer-rht/jenkins-IaaSCI/blob/rhel6/rhel6-latest/Dockerfile)** - Base Red Hat RHEL6 OS, with yum update
 
-**--\>jdk1.6-rhel6** - Installs jdk1.6 and some supporting utilities with yum
+**--\>[jdk1.6-rhel6](https://github.com/ghoelzer-rht/jenkins-IaaSCI/blob/rhel6/jdk1.6-rhel6/Dockerfile)** - Installs jdk1.6 and some supporting utilities with yum
 
-**----\>mvnbld-jdk1.6-rhel6** - Installs Maven and some supporting utilities with yum
+**----\>[mvnbld-jdk1.6-rhel6](https://github.com/ghoelzer-rht/jenkins-IaaSCI/blob/rhel6/mvnbld-jdk1.6-rhel6/Dockerfile)** - Installs Maven and some supporting utilities with yum
 
 Assuming you're using **RHEL7** as your Docker host OS, your Docker Images created will pickup the host's subscribed entitlements, enabling you to seamlessly use **yum** as part of your image builds like in our examples. Many may already be aware of this, but you can run a Docker Container using a any RHEL base OS (eg. 5,.X 6.X, 7.X) on any RHEL Host OS that supports Docker, which provides a great method for testing out OS, System Utility, Platform, and Application changes.
 
