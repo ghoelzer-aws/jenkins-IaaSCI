@@ -1,0 +1,19 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1beta3",
+    "metadata": {
+        "name": "mongodb-rs1-2"
+    },
+    "spec": {
+        "selector": {
+            "name": "mongodb-rs1-2"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 27017,
+                "targetPort": 27017
+            }
+        ]
+    }
+}

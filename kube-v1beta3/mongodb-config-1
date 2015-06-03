@@ -1,0 +1,19 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1beta3",
+    "metadata": {
+        "name": "config"
+    },
+    "spec": {
+        "selector": {
+            "name": "mongodb-config-1"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 27019,
+                "targetPort": 27019
+            }
+        ]
+    }
+}

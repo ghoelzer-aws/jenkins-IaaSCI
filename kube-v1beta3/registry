@@ -1,0 +1,19 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1beta3",
+    "metadata": {
+        "name": "privateregistry"
+    },
+    "spec": {
+        "selector": {
+            "name": "registry"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 5000,
+                "targetPort": 5000
+            }
+        ]
+    }
+}
