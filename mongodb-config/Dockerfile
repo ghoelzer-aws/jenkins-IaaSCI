@@ -1,4 +1,4 @@
-FROM mongodb-server
+FROM mongodb
 MAINTAINER Michael Heldebrant mheldebr@redhat.com
 
 # Install upstream mongodb repo
