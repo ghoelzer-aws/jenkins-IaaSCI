@@ -35,9 +35,24 @@
 "containerPort":27019,
 "protocol":"TCP"
 }
-]
+],
+
+"volumeMounts": [
+{
+"name": "config01",
+"mountPath": "/var/lib/mongo"
 }
 ]
+
+}
+],
+
+"volumes": [ {"name": "config01", "hostPath": {"path": "/var/lib/kubernetes/config01/"}} ],
+"nodeSelector":
+{
+"node-data":"member1"
+}
+
 }
 }
 }

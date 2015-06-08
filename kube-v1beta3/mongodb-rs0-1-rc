@@ -35,9 +35,23 @@
 "containerPort":5000,
 "protocol":"TCP"
 }
-]
+],
+"volumeMounts": [
+{
+"name": "rs0-1",
+"mountPath": "/var/lib/mongo"
 }
 ]
+
+}
+],
+
+"volumes": [ {"name": "rs0-1", "hostPath": {"path": "/var/lib/kubernetes/rs0-1/"}} ],
+"nodeSelector":
+{
+"node-data":"member1"
+}
+
 }
 }
 }
