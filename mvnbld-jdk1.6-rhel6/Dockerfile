@@ -4,7 +4,7 @@ MAINTAINER Greg Hoelzer ghoelzer@redhat.com
 USER root
 
 # Install Apache Maven
-RUN yum -y install openssh-server && yum clean all
+RUN yum -y install openssh-server java-1.7.0-openjdk && yum clean all
 ADD http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo /etc/yum.repos.d/epel-apache-maven.repo
 RUN yum install -y apache-maven && yum clean all
 
