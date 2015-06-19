@@ -12,7 +12,10 @@
             {
                 "protocol": "TCP",
                 "port": 18080,
-                "targetPort": 8080
+                "targetPort": 8080,
+		"publicIP": "192.168.38.22",
+		"publicIP": "192.168.38.23",
+		"publicIP": "192.168.38.24"
             }
         ]
     }

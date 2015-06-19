@@ -21,8 +21,14 @@
 "spec":{
 "containers":[
 {
-"image":"10.254.37.182:5000/mvnbld-jdk1.7-rhel7",
+"image":"10.254.37.182:5000/mvnbld-jdk1.7-rhel7:latest",
 "name":"mvnbld-jdk1dot7-rhel7",
+"env":[
+{
+"name":"ROOT_PASS",
+"value":"example"
+}
+],
 "ports":[
 {
 "name":"ssh",
