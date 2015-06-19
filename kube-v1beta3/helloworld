@@ -1,0 +1,19 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1beta3",
+    "metadata": {
+        "name": "helloworld"
+    },
+    "spec": {
+        "selector": {
+            "name": "helloworld"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 18080,
+                "targetPort": 8080
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1beta3",
+    "metadata": {
+        "name": "mvnbld-jdk1dot7-rhel6"
+    },
+    "spec": {
+        "selector": {
+            "name": "mvnbld-jdk1dot7-rhel6"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 22,
+                "targetPort": 22
+            }
+        ]
+    }
+}
